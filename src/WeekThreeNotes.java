@@ -41,5 +41,35 @@ public class WeekThreeNotes {
 			//read as for each student in the array, students...
 			System.out.println(student);
 		}
+		
+		
+		String[] products = new String[5];
+		
+		products[0] = "carrots";
+		products[1] = "pineapples";
+		products[2] = "tomatoes";
+		products[3] = "potatoes";
+		products[4] = "cereal";
+		
+		for (String product : products) {
+			System.out.println("Product: " + product);	
+		}
+		
+		int[] multiplesOf3 = new int[10];
+		//rather than writing out each individual value, we can use a loop to create it for us
+		
+		for (int i = 1; i <= multiplesOf3.length; i++) {
+			multiplesOf3[i - 1] = i * 3;
+			System.out.println("Multiple: " + multiplesOf3[i - 1]);
+		}
+		
+		
+		int[] multiplesOf5 = new int[10];
+		
+		for (int i = 0; i < multiplesOf3.length; i++) {
+			multiplesOf5[i]= (i + 1) * 5;
+			System.out.println(multiplesOf5[i]);
+		}
+
 	}
 }
